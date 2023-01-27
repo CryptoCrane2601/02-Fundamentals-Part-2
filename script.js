@@ -10,5 +10,12 @@
 // returned values in 3 different variables, and log them to the console
 
 function describeCountry(country, population, capitalCity) {
-  return `Finland has 6 million people and its capital city is ${capitalCity}`;
+  return `${country} has ${population} million people and its capital city is ${capitalCity}.`;
 }
+
+const firstCountry = describeCountry('Serbia', 7, 'Belgrade');
+console.log(firstCountry);
+const secondCountry = describeCountry('Finland', 6, 'Helsinki');
+console.log(secondCountry);
+const thirdCountry = describeCountry('Croatia', 3, 'Zagreb');
+console.log(thirdCountry);
