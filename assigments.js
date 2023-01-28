@@ -32,3 +32,19 @@
 // 4. Create a function expression which does the exact same thing, called
 // 'percentageOfWorld2', and also call it with 3 country populations (can be
 // the same populations)
+
+const worldPopulation = 7900;
+const serbiaPopulation = 6.7;
+const croatiaPopulation = 3;
+const finlandPopulation = 6;
+
+function percentageOfWorld1(population) {
+  return (population / worldPopulation) * 100;
+}
+
+const serbia = percentageOfWorld1(serbiaPopulation);
+console.log(serbia);
+const croatia = percentageOfWorld1(croatiaPopulation);
+console.log(croatia);
+const finland = percentageOfWorld1(finlandPopulation);
+console.log(finland);
