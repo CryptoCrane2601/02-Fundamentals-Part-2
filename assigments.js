@@ -38,6 +38,7 @@ const serbiaPopulation = 6.7;
 const croatiaPopulation = 3;
 const finlandPopulation = 6;
 
+// Function declaraation:
 function percentageOfWorld1(population) {
   return (population / worldPopulation) * 100;
 }
@@ -48,3 +49,14 @@ const croatia = percentageOfWorld1(croatiaPopulation);
 console.log(croatia);
 const finland = percentageOfWorld1(finlandPopulation);
 console.log(finland);
+
+const percentageOfWorld2 = function (population) {
+  return (population / worldPopulation) * 100;
+};
+
+const serbia2 = percentageOfWorld2(serbiaPopulation);
+console.log(serbia2);
+const croatia2 = percentageOfWorld2(croatiaPopulation);
+console.log(croatia2);
+const finland2 = percentageOfWorld2(finlandPopulation);
+console.log(finland2);
