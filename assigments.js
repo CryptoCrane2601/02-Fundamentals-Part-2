@@ -50,6 +50,7 @@ console.log(croatia);
 const finland = percentageOfWorld1(finlandPopulation);
 console.log(finland);
 
+// function expression:
 const percentageOfWorld2 = function (population) {
   return (population / worldPopulation) * 100;
 };
@@ -60,3 +61,16 @@ const croatia2 = percentageOfWorld2(croatiaPopulation);
 console.log(croatia2);
 const finland2 = percentageOfWorld2(finlandPopulation);
 console.log(finland2);
+
+// arrow function:
+// Recreate the last assignment, but this time create an arrow function called
+// 'percentageOfWorld3'
+
+const percentageOfWorld3 = (population) => (population / worldPopulation) * 100;
+
+const serbia3 = percentageOfWorld3(serbiaPopulation);
+console.log(serbia3);
+const croatia3 = percentageOfWorld3(croatiaPopulation);
+console.log(croatia3);
+const finland3 = percentageOfWorld3(finlandPopulation);
+console.log(finland3);
