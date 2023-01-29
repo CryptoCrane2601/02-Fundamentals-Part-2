@@ -1,3 +1,4 @@
+'use strict';
 // Lecture 1 - Functions :
 
 // 1. Write a function called 'describeCountry' which takes three parameters:
@@ -33,44 +34,69 @@
 // 'percentageOfWorld2', and also call it with 3 country populations (can be
 // the same populations)
 
-const worldPopulation = 7900;
-const serbiaPopulation = 6.7;
-const croatiaPopulation = 3;
-const finlandPopulation = 6;
+// const worldPopulation = 7900;
+// const serbiaPopulation = 6.7;
+// const croatiaPopulation = 3;
+// const finlandPopulation = 6;
 
 // Function declaraation:
-function percentageOfWorld1(population) {
-  return (population / worldPopulation) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / worldPopulation) * 100;
+// }
 
-const serbia = percentageOfWorld1(serbiaPopulation);
-console.log(serbia);
-const croatia = percentageOfWorld1(croatiaPopulation);
-console.log(croatia);
-const finland = percentageOfWorld1(finlandPopulation);
-console.log(finland);
+// const serbia = percentageOfWorld1(serbiaPopulation);
+// console.log(serbia);
+// const croatia = percentageOfWorld1(croatiaPopulation);
+// console.log(croatia);
+// const finland = percentageOfWorld1(finlandPopulation);
+// console.log(finland);
 
 // function expression:
-const percentageOfWorld2 = function (population) {
-  return (population / worldPopulation) * 100;
-};
+// const percentageOfWorld2 = function (population) {
+//   return (population / worldPopulation) * 100;
+// };
 
-const serbia2 = percentageOfWorld2(serbiaPopulation);
-console.log(serbia2);
-const croatia2 = percentageOfWorld2(croatiaPopulation);
-console.log(croatia2);
-const finland2 = percentageOfWorld2(finlandPopulation);
-console.log(finland2);
+// const serbia2 = percentageOfWorld2(serbiaPopulation);
+// console.log(serbia2);
+// const croatia2 = percentageOfWorld2(croatiaPopulation);
+// console.log(croatia2);
+// const finland2 = percentageOfWorld2(finlandPopulation);
+// console.log(finland2);
 
 // arrow function:
 // Recreate the last assignment, but this time create an arrow function called
 // 'percentageOfWorld3'
 
-const percentageOfWorld3 = (population) => (population / worldPopulation) * 100;
+// const percentageOfWorld3 = (population) => (population / worldPopulation) * 100;
 
-const serbia3 = percentageOfWorld3(serbiaPopulation);
-console.log(serbia3);
-const croatia3 = percentageOfWorld3(croatiaPopulation);
-console.log(croatia3);
-const finland3 = percentageOfWorld3(finlandPopulation);
-console.log(finland3);
+// const serbia3 = percentageOfWorld3(serbiaPopulation);
+// console.log(serbia3);
+// const croatia3 = percentageOfWorld3(croatiaPopulation);
+// console.log(croatia3);
+// const finland3 = percentageOfWorld3(finlandPopulation);
+// console.log(finland3);
+
+// LECTURE: Functions Calling Other Functions
+
+// 1. Create a function called 'describePopulation'. Use the function type you
+// like the most. This function takes in two arguments: 'country' and
+// 'population', and returns a string like this: 'China has 1441 million people,
+// which is about 18.2% of the world.'
+// 2. To calculate the percentage, 'describePopulation' call the
+// 'percentageOfWorld1' you created earlier
+// 3. Call 'describePopulation' with data for 3 countries of your choice
+
+const worldPopulation = 7900;
+
+const percentageOfWorld2 = function (population) {
+  return (population / worldPopulation) * 100;
+};
+
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld2(population);
+  return `${country} has ${population} milion people, which is ${percentage} of the world.`;
+}
+
+console.log(describePopulation('Serbia', 6.7));
+console.log(describePopulation('Croatia', 3));
+console.log(describePopulation('Finland', 6));

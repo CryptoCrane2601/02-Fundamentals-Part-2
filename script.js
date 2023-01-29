@@ -22,16 +22,16 @@
 // console.log(yearsUntilRetirement(1989, 'Dejan'));
 // console.log(yearsUntilRetirement(1996, 'Katarina'));
 
-function cutFruitPieces(fruit) {
-  return fruit * 4;
-}
+// function cutFruitPieces(fruit) {
+//   return fruit * 4;
+// }
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
-  const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
-  return juice;
-}
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
+//   const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
+//   return juice;
+// }
 
-const fruit1 = fruitProcessor(2, 3);
-console.log(fruit1);
+// const fruit1 = fruitProcessor(2, 3);
+// console.log(fruit1);
