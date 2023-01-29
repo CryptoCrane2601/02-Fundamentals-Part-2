@@ -29,8 +29,9 @@ function cutFruitPieces(fruit) {
 function fruitProcessor(apples, oranges) {
   const applePieces = cutFruitPieces(apples);
   const orangePieces = cutFruitPieces(oranges);
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`;
   return juice;
 }
 
-fruitProcessor(2, 4);
+const fruit1 = fruitProcessor(2, 3);
+console.log(fruit1);
