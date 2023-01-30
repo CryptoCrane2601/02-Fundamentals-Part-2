@@ -36,13 +36,21 @@
 // const fruit1 = fruitProcessor(2, 3);
 // console.log(fruit1);
 
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-}
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const yearsUntilRetirement (birthYear, firstName) {
-  const age = calcAge(birthYear);
-  const retirment = 65 - ag e;
-  // return retirment;
-  return `${firstName} retires in ${retirment} years.`;
-};
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//   const age = calcAge(birthYear);
+//   const retirment = 65 - age;
+//   if (retirment > 0) {
+//     console.log(`${firstName} retires in ${retirment} years.`);
+//     return retirment;
+//   } else {
+//     console.log(`${firstName} already retired!🎉`);
+//     return -1;
+//   }
+// };
+
+// console.log(yearsUntilRetirement(1989, 'Dejan'));
+// console.log(yearsUntilRetirement(1968, 'Dejan'));
