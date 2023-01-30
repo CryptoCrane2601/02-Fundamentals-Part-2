@@ -54,3 +54,13 @@
 
 // console.log(yearsUntilRetirement(1989, 'Dejan'));
 // console.log(yearsUntilRetirement(1968, 'Dejan'));
+
+// Arrays
+
+const frieds = ['Dejan', 'Katarina', 'Ivana', 'Zeljko'];
+
+console.log(frieds);
+console.log(frieds[0]);
+console.log(frieds[2]);
+
+console.log(frieds.length);
