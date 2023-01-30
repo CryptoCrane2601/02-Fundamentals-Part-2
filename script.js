@@ -64,3 +64,31 @@ console.log(frieds[0]);
 console.log(frieds[2]);
 
 console.log(frieds.length);
+console.log(frieds[frieds.length - 1]);
+
+frieds[4] = 'Nemanja';
+console.log(frieds);
+const firstName = 'Dejan';
+const dejan = [firstName, 'Kurcubic', 2037 - 1989, frieds];
+console.log(dejan);
+
+// Exercise:
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1989, 1985, 1996, 1990, 2020];
+
+const age1 = calcAge2(years[0]);
+const age2 = calcAge2(years[2]);
+const age3 = calcAge2(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge2(years[0]),
+  calcAge2(years[2]),
+  calcAge2(years[years.length - 1]),
+];
+
+console.log(ages);
