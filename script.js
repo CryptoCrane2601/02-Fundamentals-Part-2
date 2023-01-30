@@ -35,3 +35,14 @@
 
 // const fruit1 = fruitProcessor(2, 3);
 // console.log(fruit1);
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+const yearsUntilRetirement (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirment = 65 - ag e;
+  // return retirment;
+  return `${firstName} retires in ${retirment} years.`;
+};

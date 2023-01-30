@@ -86,17 +86,17 @@
 // 'percentageOfWorld1' you created earlier
 // 3. Call 'describePopulation' with data for 3 countries of your choice
 
-const worldPopulation = 7900;
+// const worldPopulation = 7900;
 
-const percentageOfWorld2 = function (population) {
-  return (population / worldPopulation) * 100;
-};
+// const percentageOfWorld2 = function (population) {
+//   return (population / worldPopulation) * 100;
+// };
 
-function describePopulation(country, population) {
-  const percentage = percentageOfWorld2(population);
-  return `${country} has ${population} milion people, which is ${percentage} of the world.`;
-}
+// function describePopulation(country, population) {
+//   const percentage = percentageOfWorld2(population);
+//   return `${country} has ${population} milion people, which is ${percentage} of the world.`;
+// }
 
-console.log(describePopulation('Serbia', 6.7));
-console.log(describePopulation('Croatia', 3));
-console.log(describePopulation('Finland', 6));
+// console.log(describePopulation('Serbia', 6.7));
+// console.log(describePopulation('Croatia', 3));
+// console.log(describePopulation('Finland', 6));
