@@ -34,15 +34,15 @@
 // 'percentageOfWorld2', and also call it with 3 country populations (can be
 // the same populations)
 
-// const worldPopulation = 7900;
+const worldPopulation = 7900;
 // const serbiaPopulation = 6.7;
 // const croatiaPopulation = 3;
 // const finlandPopulation = 6;
 
 // Function declaraation:
-// function percentageOfWorld1(population) {
-//   return (population / worldPopulation) * 100;
-// }
+function percentageOfWorld1(population) {
+  return (population / worldPopulation) * 100;
+}
 
 // const serbia = percentageOfWorld1(serbiaPopulation);
 // console.log(serbia);
@@ -100,3 +100,16 @@
 // console.log(describePopulation('Serbia', 6.7));
 // console.log(describePopulation('Croatia', 3));
 // console.log(describePopulation('Finland', 6));
+
+// LECTURE: Introduction to Arrays:
+
+const populations = [6, 3, 6.7, 33];
+console.log(populations.length === 4);
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+console.log(percentages);
