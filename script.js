@@ -94,10 +94,21 @@
 // console.log(ages);
 
 const frieds = ['Dejan', 'Katarina', 'Ivana', 'Nemanja'];
-
+// Add element
 frieds.push('Stojan');
-
 console.log(frieds);
 
-frieds.pop(frieds[0]);
+// Add element - first place
+frieds.unshift('Ceca');
+console.log(frieds);
+
+// Remove element - last place
+frieds.pop();
+console.log(frieds);
+const popped = frieds.pop();
+console.log(popped);
+console.log(frieds);
+
+//Remove element - first place
+frieds.shift();
 console.log(frieds);
