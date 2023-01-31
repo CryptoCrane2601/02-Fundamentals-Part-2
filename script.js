@@ -92,3 +92,12 @@
 // ];
 
 // console.log(ages);
+
+const frieds = ['Dejan', 'Katarina', 'Ivana', 'Nemanja'];
+
+frieds.push('Stojan');
+
+console.log(frieds);
+
+frieds.pop(frieds[0]);
+console.log(frieds);
