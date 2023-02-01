@@ -93,32 +93,32 @@
 
 // console.log(ages);
 
-const frieds = ['Dejan', 'Katarina', 'Ivana', 'Nemanja'];
-// Add element
-frieds.push('Stojan');
-console.log(frieds);
+// const frieds = ['Dejan', 'Katarina', 'Ivana', 'Nemanja'];
+// // Add element
+// frieds.push('Stojan');
+// console.log(frieds);
 
-// Add element - first place
-frieds.unshift('Ceca');
-console.log(frieds);
+// // Add element - first place
+// frieds.unshift('Ceca');
+// console.log(frieds);
 
-// Remove element - last place
-frieds.pop();
-console.log(frieds);
-const popped = frieds.pop();
-console.log(popped);
-console.log(frieds);
+// // Remove element - last place
+// frieds.pop();
+// console.log(frieds);
+// const popped = frieds.pop();
+// console.log(popped);
+// console.log(frieds);
 
-//Remove element - first place
-frieds.shift();
-console.log(frieds);
+// //Remove element - first place
+// frieds.shift();
+// console.log(frieds);
 
-console.log(frieds.indexOf('Dejan'));
-console.log(frieds.indexOf('Katarina'));
+// console.log(frieds.indexOf('Dejan'));
+// console.log(frieds.indexOf('Katarina'));
 
-console.log(frieds.includes('Ivana'));
-console.log(frieds.includes('Buza'));
+// console.log(frieds.includes('Ivana'));
+// console.log(frieds.includes('Buza'));
 
-if (frieds.includes('Katarina')) {
-  console.log('You have friend called Katarina');
-}
+// if (frieds.includes('Katarina')) {
+//   console.log('You have friend called Katarina');
+// }
