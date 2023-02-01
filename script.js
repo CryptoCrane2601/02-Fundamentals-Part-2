@@ -112,3 +112,13 @@ console.log(frieds);
 //Remove element - first place
 frieds.shift();
 console.log(frieds);
+
+console.log(frieds.indexOf('Dejan'));
+console.log(frieds.indexOf('Katarina'));
+
+console.log(frieds.includes('Ivana'));
+console.log(frieds.includes('Buza'));
+
+if (frieds.includes('Katarina')) {
+  console.log('You have friend called Katarina');
+}
