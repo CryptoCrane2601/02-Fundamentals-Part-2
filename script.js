@@ -122,3 +122,13 @@
 // if (frieds.includes('Katarina')) {
 //   console.log('You have friend called Katarina');
 // }
+
+// Object:
+
+const dejan = {
+  firstName: 'Dejan',
+  lastName: 'Kurcubic',
+  age: 2023 - 1989,
+  job: 'salesman',
+  friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
+};
