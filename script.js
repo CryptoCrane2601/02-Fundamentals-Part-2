@@ -142,7 +142,7 @@ const nameKey = 'Name';
 console.log(dejan['first' + nameKey]);
 console.log(dejan['last' + nameKey]);
 
-const interestedIn = promt(
+const interestedIn = prompt(
   'What do you want to known about Dejan? Choose between firstName, lastName, age, friends'
 );
 console.log(dejan[interestedIn]);
