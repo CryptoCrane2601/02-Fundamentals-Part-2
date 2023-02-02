@@ -132,3 +132,17 @@ const dejan = {
   job: 'salesman',
   friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
 };
+
+console.log(dejan);
+
+console.log(dejan.lastName);
+console.log(dejan['lastName']);
+
+const nameKey = 'Name';
+console.log(dejan['first' + nameKey]);
+console.log(dejan['last' + nameKey]);
+
+const interestedIn = promt(
+  'What do you want to known about Dejan? Choose between firstName, lastName, age, friends'
+);
+console.log(dejan[interestedIn]);
