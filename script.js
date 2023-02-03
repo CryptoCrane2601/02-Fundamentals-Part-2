@@ -145,4 +145,14 @@ console.log(dejan['last' + nameKey]);
 const interestedIn = prompt(
   'What do you want to known about Dejan? Choose between firstName, lastName, age, friends'
 );
-console.log(dejan[interestedIn]);
+if (dejan[interestedIn]) {
+  console.log(dejan[interestedIn]);
+} else {
+  console.log(
+    'Wrong request! Choose something between firstName, lastName, age or friends.'
+  );
+}
+
+dejan.location = 'Serbia';
+dejan['twitter'] = '@shooockergmail';
+console.log(dejan);
