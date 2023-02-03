@@ -133,26 +133,33 @@ const dejan = {
   friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
 };
 
-console.log(dejan);
+// console.log(dejan);
 
-console.log(dejan.lastName);
-console.log(dejan['lastName']);
+// console.log(dejan.lastName);
+// console.log(dejan['lastName']);
 
-const nameKey = 'Name';
-console.log(dejan['first' + nameKey]);
-console.log(dejan['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(dejan['first' + nameKey]);
+// console.log(dejan['last' + nameKey]);
 
-const interestedIn = prompt(
-  'What do you want to known about Dejan? Choose between firstName, lastName, age, friends'
-);
-if (dejan[interestedIn]) {
-  console.log(dejan[interestedIn]);
-} else {
-  console.log(
-    'Wrong request! Choose something between firstName, lastName, age or friends.'
-  );
-}
+// const interestedIn = prompt(
+//   'What do you want to known about Dejan? Choose between firstName, lastName, age, friends'
+// );
+// if (dejan[interestedIn]) {
+//   console.log(dejan[interestedIn]);
+// } else {
+//   console.log(
+//     'Wrong request! Choose something between firstName, lastName, age or friends.'
+//   );
+// }
 
-dejan.location = 'Serbia';
-dejan['twitter'] = '@shooockergmail';
-console.log(dejan);
+// dejan.location = 'Serbia';
+// dejan['twitter'] = '@shooockergmail';
+// console.log(dejan);
+
+// Challenge :
+// Dejan has 4 friends, and his best friend is called Nemanja.
+
+const test = `${dejan.firstName} has ${dejan.friends.length} friends, and his best friend is called ${dejan.friends[3]}.`;
+
+console.log(test);
