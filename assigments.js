@@ -115,3 +115,16 @@
 // console.log(percentages);
 
 // LECTURE: Basic Array Operations (Methods):
+
+const neighbours = [
+  'Hungary',
+  'Croatia',
+  'B&H',
+  'Montenegro',
+  'Macedonia',
+  'Bulgaria',
+  'Romania',
+];
+
+neighbours.push('Utopia');
+console.log(neighbours);
