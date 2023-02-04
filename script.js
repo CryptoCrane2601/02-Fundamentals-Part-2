@@ -171,9 +171,13 @@ const dejan = {
   job: 'salesman',
   friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
   hasDriversLicense: true,
-  calcAge: function (birthYear) {
-    return 2023 - birthYear;
+  // calcAge: function (birthYear) {
+  //   return 2023 - birthYear;
+  // },
+  calcAge: function () {
+    return 2023 - this.birthYear;
   },
 };
 
 console.log(dejan.calcAge(1989));
+// console.log(dejan['calcAge'](1989));
