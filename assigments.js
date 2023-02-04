@@ -154,9 +154,16 @@ const myCountry = {
     'Bulgaria',
     'Romania',
   ],
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    );
+  },
 };
 
-console.log(myCountry);
+myCountry.describe();
+
+// console.log(myCountry);
 
 // LECTURE: Dot vs. Bracket Notation
 
@@ -164,6 +171,9 @@ console.log(myCountry);
 // console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
 // and a capital called Helsinki.'
 
-console.log(
-  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
-);
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+// );
+
+// console.log(myCountry.population + 2);
+// console.log(myCountry['population'] - 2);
