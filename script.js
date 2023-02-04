@@ -174,10 +174,16 @@ const dejan = {
   // calcAge: function (birthYear) {
   //   return 2023 - birthYear;
   // },
+  // calcAge: function () {
+  //   console.log(this.job);
+  //   return 2023 - this.birthYear;
+  // },
   calcAge: function () {
-    return 2023 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    return this.age;
   },
 };
-
-console.log(dejan.calcAge(1989));
-// console.log(dejan['calcAge'](1989));
+console.log(dejan.calcAge());
+console.log(dejan.age);
+console.log(dejan.age);
+console.log(dejan.age);
