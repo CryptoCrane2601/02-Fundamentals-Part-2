@@ -141,10 +141,10 @@
 // LECTURE: Introduction to Objects:
 
 const myCountry = {
-  coutry: 'Serbia',
+  country: 'Serbia',
   capital: 'Belgrade',
   language: 'serbian',
-  population: 6,
+  population: 6.5,
   neighbours: [
     'Hungary',
     'Croatia',
@@ -157,3 +157,13 @@ const myCountry = {
 };
 
 console.log(myCountry);
+
+// LECTURE: Dot vs. Bracket Notation
+
+// Using the object from the previous assignment, log a string like this to the
+// console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
+// and a capital called Helsinki.'
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
