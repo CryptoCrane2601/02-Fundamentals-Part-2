@@ -159,9 +159,11 @@ const myCountry = {
       `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
     );
   },
+  isIsland: this.neighbours > 0 ? true : false,
 };
 
 myCountry.describe();
+console.log(myCountry.isIsland);
 
 // console.log(myCountry);
 
