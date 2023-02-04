@@ -125,13 +125,13 @@
 
 // Object:
 
-const dejan = {
-  firstName: 'Dejan',
-  lastName: 'Kurcubic',
-  age: 2023 - 1989,
-  job: 'salesman',
-  friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
-};
+// const dejan = {
+//   firstName: 'Dejan',
+//   lastName: 'Kurcubic',
+//   age: 2023 - 1989,
+//   job: 'salesman',
+//   friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
+// };
 
 // console.log(dejan);
 
@@ -160,6 +160,20 @@ const dejan = {
 // Challenge :
 // Dejan has 4 friends, and his best friend is called Nemanja.
 
-const test = `${dejan.firstName} has ${dejan.friends.length} friends, and his best friend is called ${dejan.friends[3]}.`;
+// const test = `${dejan.firstName} has ${dejan.friends.length} friends, and his best friend is called ${dejan.friends[3]}.`;
 
-console.log(test);
+// console.log(test);
+
+const dejan = {
+  firstName: 'Dejan',
+  lastName: 'Kurcubic',
+  birthYear: 1989,
+  job: 'salesman',
+  friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
+  hasDriversLicense: true,
+  calcAge: function (birthYear) {
+    return 2023 - birthYear;
+  },
+};
+
+console.log(dejan.calcAge(1989));
