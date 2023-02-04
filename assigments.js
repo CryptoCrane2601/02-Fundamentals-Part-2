@@ -116,24 +116,44 @@
 
 // LECTURE: Basic Array Operations (Methods):
 
-const neighbours = [
-  'Hungary',
-  'Croatia',
-  'B&H',
-  'Montenegro',
-  'Macedonia',
-  'Bulgaria',
-  'Romania',
-];
+// const neighbours = [
+//   'Hungary',
+//   'Croatia',
+//   'B&H',
+//   'Montenegro',
+//   'Macedonia',
+//   'Bulgaria',
+//   'Romania',
+// ];
 
-neighbours.push('Utopia');
-console.log(neighbours);
-neighbours.pop();
-if (neighbours.includes('Germany')) {
-  console.log('This is central European country');
-} else {
-  console.log('Probably not a central European country :D');
-}
+// neighbours.push('Utopia');
+// console.log(neighbours);
+// neighbours.pop();
+// if (neighbours.includes('Germany')) {
+//   console.log('This is central European country');
+// } else {
+//   console.log('Probably not a central European country :D');
+// }
 
-neighbours[3] = 'Crna Gora';
-console.log(neighbours);
+// neighbours[3] = 'Crna Gora';
+// console.log(neighbours);
+
+// LECTURE: Introduction to Objects:
+
+const myCountry = {
+  coutry: 'Serbia',
+  capital: 'Belgrade',
+  language: 'serbian',
+  population: 6,
+  neighbours: [
+    'Hungary',
+    'Croatia',
+    'B&H',
+    'Montenegro',
+    'Macedonia',
+    'Bulgaria',
+    'Romania',
+  ],
+};
+
+console.log(myCountry);
