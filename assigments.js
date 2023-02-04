@@ -128,3 +128,12 @@ const neighbours = [
 
 neighbours.push('Utopia');
 console.log(neighbours);
+neighbours.pop();
+if (neighbours.includes('Germany')) {
+  console.log('This is central European country');
+} else {
+  console.log('Probably not a central European country :D');
+}
+
+neighbours[3] = 'Crna Gora';
+console.log(neighbours);
