@@ -140,30 +140,30 @@
 
 // LECTURE: Introduction to Objects:
 
-const myCountry = {
-  country: 'Serbia',
-  capital: 'Belgrade',
-  language: 'serbian',
-  population: 6.5,
-  neighbours: [
-    'Hungary',
-    'Croatia',
-    'B&H',
-    'Montenegro',
-    'Macedonia',
-    'Bulgaria',
-    'Romania',
-  ],
-  describe: function () {
-    console.log(
-      `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
-    );
-  },
-  isIsland: this.neighbours > 0 ? true : false,
-};
+// const myCountry = {
+//   country: 'Serbia',
+//   capital: 'Belgrade',
+//   language: 'serbian',
+//   population: 6.5,
+//   neighbours: [
+//     'Hungary',
+//     'Croatia',
+//     'B&H',
+//     'Montenegro',
+//     'Macedonia',
+//     'Bulgaria',
+//     'Romania',
+//   ],
+//   describe: function () {
+//     console.log(
+//       `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+//     );
+//   },
+//   isIsland: this.neighbours > 0 ? true : false,
+// };
 
-myCountry.describe();
-console.log(myCountry.isIsland);
+// myCountry.describe();
+// console.log(myCountry.isIsland);
 
 // console.log(myCountry);
 
