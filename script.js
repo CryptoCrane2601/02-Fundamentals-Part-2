@@ -164,36 +164,36 @@
 
 // console.log(test);
 
-const dejan = {
-  firstName: 'Dejan',
-  lastName: 'Kurcubic',
-  birthYear: 1989,
-  job: 'salesman',
-  friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
-  hasDriversLicense: true,
-  // calcAge: function (birthYear) {
-  //   return 2023 - birthYear;
-  // },
-  // calcAge: function () {
-  //   console.log(this.job);
-  //   return 2023 - this.birthYear;
-  // },
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()} old ${
-      this.job
-    }, and he has ${this.hasDriversLicense ? 'a' : ''} drivers license`;
-  },
-};
-console.log(dejan.calcAge());
-console.log(dejan.age);
-console.log(dejan.age);
-console.log(dejan.age);
+// const dejan = {
+//   firstName: 'Dejan',
+//   lastName: 'Kurcubic',
+//   birthYear: 1989,
+//   job: 'salesman',
+//   friends: ['Dejan', 'Katarina', 'Ivana', 'Nemanja'],
+//   hasDriversLicense: true,
+// calcAge: function (birthYear) {
+//   return 2023 - birthYear;
+// },
+// calcAge: function () {
+//   console.log(this.job);
+//   return 2023 - this.birthYear;
+// },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} old ${
+//       this.job
+//     }, and he has ${this.hasDriversLicense ? 'a' : ''} drivers license`;
+//   },
+// };
+// console.log(dejan.calcAge());
+// console.log(dejan.age);
+// console.log(dejan.age);
+// console.log(dejan.age);
 
 // Challenge :
 // 'Dejan is a 48 old salesman, and he has a drivers license.'
 
-console.log(dejan.getSummary());
+// console.log(dejan.getSummary());
