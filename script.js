@@ -182,7 +182,11 @@ const dejan = {
     this.age = 2037 - this.birthYear;
     return this.age;
   },
-  getSummary: function () {},
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? 'a' : ''} drivers license`;
+  },
 };
 console.log(dejan.calcAge());
 console.log(dejan.age);
@@ -192,4 +196,4 @@ console.log(dejan.age);
 // Challenge :
 // 'Dejan is a 48 old salesman, and he has a drivers license.'
 
-console.log(`${dejan.firstName} is a ${dejan.age} old ${dejan.job}, and he `);
+console.log(dejan.getSummary());
