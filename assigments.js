@@ -180,4 +180,4 @@
 // console.log(myCountry.population + 2);
 // console.log(myCountry['population'] - 2);
 
-// LECTURE: Object Methods
+//LECTURE: Iteration: The for Loop
