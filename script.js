@@ -217,7 +217,7 @@
 //   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 // }
 
-const types = [];
+// const types = [];
 
 const dejanArray = [
   'Dejan',
@@ -228,19 +228,33 @@ const dejanArray = [
   true,
 ];
 
+// for (let i = 0; i < dejanArray.length; i++) {
+//   console.log(dejanArray[i], typeof dejanArray[i]);
+//   // types[i] = typeof dejanArray[i];
+//   types.push(typeof dejanArray[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2023 - years[i]);
+// }
+
+// console.log(ages);
+
+// continue and break
+
+// for (let i = 0; i < dejanArray.length; i++) {
+//   if (typeof dejanArray[i] !== 'string') continue;
+
+//   console.log(dejanArray[i], typeof dejanArray[i]);
+// }
+
 for (let i = 0; i < dejanArray.length; i++) {
+  if (typeof dejanArray[i] === 'number') break;
+
   console.log(dejanArray[i], typeof dejanArray[i]);
-  // types[i] = typeof dejanArray[i];
-  types.push(typeof dejanArray[i]);
 }
-
-console.log(types);
-
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  ages.push(2023 - years[i]);
-}
-
-console.log(ages);
