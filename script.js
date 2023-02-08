@@ -273,9 +273,31 @@
 //   console.log(dejan[i]);
 // }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`------------- Starting exercise ${exercise}; `);
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Lifting weights repetition ${rep}`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`------------- Starting exercise ${exercise}; `);
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+//   }
+// }
+
+// While loop
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+//   rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log('loop is about to end');
   }
 }
