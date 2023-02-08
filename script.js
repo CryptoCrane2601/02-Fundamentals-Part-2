@@ -225,6 +225,6 @@ const dejanArray = [
   ['Nemanja', 'Stojan', 'Igor'],
 ];
 
-for (let i = 0; i <= dejanArray.length - 1; i++) {
+for (let i = 0; i < dejanArray.length; i++) {
   console.log(dejanArray[i]);
 }
