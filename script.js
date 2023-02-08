@@ -213,6 +213,18 @@
 
 // for loop keeps running while condition is TRUE!
 
-for (let rep = 1; rep <= 30; rep++) {
-  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// for (let rep = 1; rep <= 30; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+const dejanArray = [
+  'Dejan',
+  'Kurcubic',
+  2023 - 1989,
+  'salesman',
+  ['Nemanja', 'Stojan', 'Igor'],
+];
+
+for (let i = 0; i <= dejanArray.length - 1; i++) {
+  console.log(dejanArray[i]);
 }
