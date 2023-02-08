@@ -219,14 +219,14 @@
 
 // const types = [];
 
-const dejanArray = [
-  'Dejan',
-  'Kurcubic',
-  2023 - 1989,
-  'salesman',
-  ['Nemanja', 'Stojan', 'Igor'],
-  true,
-];
+// const dejanArray = [
+//   'Dejan',
+//   'Kurcubic',
+//   2023 - 1989,
+//   'salesman',
+//   ['Nemanja', 'Stojan', 'Igor'],
+//   true,
+// ];
 
 // for (let i = 0; i < dejanArray.length; i++) {
 //   console.log(dejanArray[i], typeof dejanArray[i]);
@@ -253,8 +253,22 @@ const dejanArray = [
 //   console.log(dejanArray[i], typeof dejanArray[i]);
 // }
 
-for (let i = 0; i < dejanArray.length; i++) {
-  if (typeof dejanArray[i] === 'number') break;
+// for (let i = 0; i < dejanArray.length; i++) {
+//   if (typeof dejanArray[i] === 'number') break;
 
-  console.log(dejanArray[i], typeof dejanArray[i]);
+//   console.log(dejanArray[i], typeof dejanArray[i]);
+// }
+
+// Looping backwards and loopping in the loop
+
+const dejan = [
+  'Dejan',
+  'Kurcubic',
+  2023 - 1989,
+  'salesman',
+  ['Nemanja', 'Stojan', 'Igor'],
+];
+
+for (let i = dejan.length - 1; i >= 0; i--) {
+  console.log(dejan[i]);
 }
