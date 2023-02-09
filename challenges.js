@@ -155,4 +155,8 @@ function calcAverage(arr) {
   for (let i = 0; i < arr.length; i++) {
     sum = sum + arr[i];
   }
+  return sum / arr.length;
 }
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
